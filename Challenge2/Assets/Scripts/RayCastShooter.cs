@@ -214,6 +214,10 @@ public class RayCastShooter : MonoBehaviour
 		{
 			HandleTouchMove(Input.mousePosition);
 		}
+		if (touchRectangle.Contains(Input.mousePosition))
+			inRect = true;
+		else
+			inRect = false;
 #endif
 	}
 
